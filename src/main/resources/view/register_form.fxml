@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="registerPage" prefHeight="365.0" prefWidth="305.0" style="-fx-background-color: #C4DED8; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegisterFormController">
+   <children>
+      <ImageView fitHeight="89.0" fitWidth="110.0" layoutX="108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-chat-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="103.0" text="LIVE CHAT-ROOM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRegUsername" alignment="CENTER" layoutX="32.0" layoutY="168.0" onAction="#txtGoToRegPass" prefHeight="30.0" prefWidth="242.0" promptText="ENTER USERNAME" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtRegPass" alignment="CENTER" layoutX="32.0" layoutY="210.0" onAction="#txtgoToReg" prefHeight="30.0" prefWidth="242.0" promptText="ENTER PASSWORD" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="96.0" layoutY="263.0" onAction="#btnRegOnAction" prefHeight="30.0" prefWidth="114.0" style="-fx-background-radius: 10; -fx-background-color: #379F8F;" text="REGISTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="96.0" layoutY="306.0" onAction="#btnBackOnAction" prefHeight="30.0" prefWidth="114.0" style="-fx-background-radius: 10; -fx-background-color: #379F8F;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

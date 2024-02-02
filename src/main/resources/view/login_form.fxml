@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPage" prefHeight="400.0" prefWidth="600.0" style="-fx-background-radius: 10; -fx-background-color: #C4DED8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="344.0" fitWidth="316.0" layoutX="25.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/storyline-login-page-on-laptop-screen.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="320.0" layoutY="185.0" onAction="#txtGoToPass" prefHeight="30.0" prefWidth="242.0" promptText="ENTER USERNAME" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="81.0" fitWidth="101.0" layoutX="401.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-chat-96.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="393.0" layoutY="281.0" onAction="#btnLogOnAction" prefHeight="30.0" prefWidth="97.0" style="-fx-background-radius: 10; -fx-background-color: #379F8F;" text="LOGIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="365.0" layoutY="105.0" text="LIVE CHAT-ROOM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="393.0" layoutY="322.0" onAction="#btnRegOnAction" prefHeight="30.0" prefWidth="97.0" style="-fx-background-radius: 10; -fx-background-color: #379F8F;" text="REGISTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtPass" alignment="CENTER" layoutX="321.0" layoutY="230.0" onAction="#txtGoToLogin" prefHeight="30.0" prefWidth="242.0" promptText="ENTER  PASSWORD" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
